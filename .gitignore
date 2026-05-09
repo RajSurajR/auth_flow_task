@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# other
+temp.txt
+jsconfig.json

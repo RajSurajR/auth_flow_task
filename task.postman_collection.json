@@ -1,0 +1,185 @@
+{
+  "info": {
+    "_postman_id": "133423bf-e8ad-40d1-8aa2-187b9444e86a",
+    "name": "task",
+    "description": "This collection contains the core endpoints for managing tasks in the application. It supports the full task workflow, including creating, updating, retrieving, and deleting tasks.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46096647"
+  },
+  "item": [
+    {
+      "name": "create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Dummy title\",\r\n    \"description\": \"Dummy description 2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/task/create",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "task",
+            "create"
+          ]
+        },
+        "description": "create task"
+      },
+      "response": []
+    },
+    {
+      "name": "update",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taskId\":\"69fee06f6874e550e94e81d4\",\r\n    \"title\": \"Dummy title\",\r\n    \"description\": \"this is update description 2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/task/update",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "task",
+            "update"
+          ]
+        },
+        "description": "update task"
+      },
+      "response": []
+    },
+    {
+      "name": "my-tasks",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taskId\":\"69fee06f6874e550e94e81d4\",\r\n    \"title\": \"Dummy title\",\r\n    \"description\": \"this is update description 2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/task/my-tasks",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "task",
+            "my-tasks"
+          ]
+        },
+        "description": "fetch all taks of a user"
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taskId\":\"69fee00d6874e550e94e81d3\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/task/delete",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "task",
+            "delete"
+          ]
+        },
+        "description": "delete a task"
+      },
+      "response": []
+    },
+    {
+      "name": "all_tasks",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taskId\":\"69fee06f6874e550e94e81d4\",\r\n    \"title\": \"Dummy title\",\r\n    \"description\": \"this is update description 2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/task/all-tasks",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "task",
+            "all-tasks"
+          ]
+        },
+        "description": "fetch all task of all user by admin"
+      },
+      "response": []
+    },
+    {
+      "name": "admin-delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taskId\":\"69fee06f6874e550e94e81d4\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/task/admin-delete",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "task",
+            "admin-delete"
+          ]
+        },
+        "description": "delete task of any user by admin"
+      },
+      "response": []
+    }
+  ]
+}
